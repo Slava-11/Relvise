@@ -1,0 +1,94 @@
+.contact{
+    &-container{
+        padding: {
+            top: 80px;
+            bottom: 140px;
+        }
+    }
+    &__text{
+        & > *:not(:last-child){
+            margin-bottom: 10px;
+        }
+        &-title{
+            max-width: 620px;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+        &-subtitle{
+            text-align: center;
+            max-width: 500px;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }
+    &__content{
+        margin-top: 110px;
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__card{
+        background-color: var(--white);
+        max-width: 330px;
+        margin: {
+            left: auto;
+            right: auto;
+        }
+        padding: {
+            top: 50px;
+            bottom: 50px;
+            left: 40px;
+            right: 40px;
+        }
+        & > *:not(:last-child){
+            margin-bottom: 15px;
+        }
+        &-img{
+            width: 72px;
+            height: 72px;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+        &-text{
+            font-weight: 600;
+            text-align: center;
+        }
+        &-title{
+            text-align: center;
+        }
+        &-button{
+            text-align: center;
+            max-width: 160px;
+            color: var(--buttonColor);
+            border: 1px solid var(--buttonColor);
+            border-radius: 5px;
+            &:hover{
+                color: var(--orangeHoverColor);
+                border: 1px solid var(--orangeHoverColor);
+                transition: .3s;
+            }
+            &:active{
+                color: var(--gray);
+                transition: .1s;
+            }
+            padding: {
+                top: 10px;
+                bottom: 10px;
+                left: 20px;
+                right: 20px;
+            }
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.footer{
+    background-color: var(--bgDarkColor);
+    &__content{
+        padding: {
+            top: 50px;
+            bottom: 50px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__additional{
+        &-title{
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        &-information{
+            &-text{
+                margin-bottom: 10px;
+                color: var(--white);
+                &:active{
+                    color: var(--gray);
+                    transition: .1s;
+                }
+            }
+        }
+    }
+}

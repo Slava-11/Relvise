@@ -1,0 +1,24 @@
+.container{
+        padding: {
+            left: 13px;
+            right: 13px;
+        }
+        @include for-tablet{
+            padding: {
+                left: 55px;
+                right: 55px;
+            }
+        }
+        @include for-desktop{
+            padding: {
+                left: 98px;
+                right: 98px;
+            }
+        }
+        @include for-desktop-HD{
+            padding: {
+                left: 195px;
+                right: 195px;
+            }
+        }
+}
