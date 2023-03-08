@@ -75,11 +75,6 @@
                 top: 50%;
                 transform: translate(-50%, 0%) rotate(-45deg); 
               }
-              &.active{
-                position: fixed;
-                top: 0;
-                right: 0;
-              }
         }
     }
     &__content{

@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let body = document.querySelector('body');
 
     burger.addEventListener('click', function(){
-        body.classList.toggle('active')
+        body.classList.toggle('active');
+        burger.classList.toggle('active')
         burgerMenu.classList.toggle('active');
     })
 
