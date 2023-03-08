@@ -11,18 +11,13 @@
             bottom: 40px;
         }
     }
-    &__text{
-        & > *:not(:last-child){
-            margin-bottom: 10px;
-        }
-        &-title{
-            text-align: left;
-            max-width: 620px;
-        }
-        &-subtitle{
-            text-align: left;
-            max-width: 500px;
-        }
+    &__title{
+        text-align: left;
+        max-width: 620px;
+    }
+    &__subtitle{
+        text-align: left;
+        margin-top: 10px;
     }
     &__button{
         &-button{

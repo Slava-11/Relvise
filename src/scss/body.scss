@@ -1,6 +1,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bgGrayColor);
+    user-select: none;
+    &.active{
+      overflow: hidden;
+    }
 }
 ::-webkit-scrollbar{
     width: 15px;

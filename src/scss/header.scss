@@ -42,6 +42,7 @@
             @include for-tablet{
                 display: none;
             }
+            cursor: pointer;
             width: 30px;
             height: 30px;
             position: relative;
@@ -74,14 +75,16 @@
                 top: 50%;
                 transform: translate(-50%, 0%) rotate(-45deg); 
               }
+              &.active{
+                position: fixed;
+                top: 0;
+                right: 0;
+              }
         }
     }
     &__content{
         margin-top: 20px;
         max-width: 370px;
-        & > *:not(:last-child){
-            margin-bottom: 35px;
-        }
         @include for-tablet{
             max-width: 400px;
             margin-top: 80px;
@@ -90,6 +93,7 @@
             font-weight: 800;
             font-size: 40px;
             text-align: left;
+            margin-top: 35px;
             @include for-tablet{
                 font-size: 58px;
             }
@@ -97,12 +101,14 @@
         &-subtitle{
             font-size: 20px;
             font-weight: 500;
+            margin-top: 35px;
         }
         &-buttons{
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: 10px;
+            margin-top: 35px;
         }
         &-button,&-button-get{
             font-weight: 700;
@@ -131,7 +137,7 @@
             max-width: 195px;
             color: var(--white);
             background-color: var(--buttonColor);
-            border: none;
+            border: 1px solid transparent;
             &:hover{
                 transition: .3s;
                 border: 1px solid var(--bgGreenColor);
@@ -155,8 +161,22 @@
         background: #FFEFBA;
         transform: translateX(-100%);
         transition: transform 0.5s;
+        padding: {
+            top: 30px;
+            left: 30px;
+        }
         &.active {
             transform: translateX(0);
+        }
+        &-item{
+            font-size: 30px;
+            padding-bottom: 10px;
+            color: var(--gray);
+            max-width: 130px;
+            &:active{
+                transition: .1s;
+                color: var(--white);
+            }
         }
     }
 }
