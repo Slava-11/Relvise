@@ -1,2 +1,3 @@
+import './js/burger.js';
+import './js/anchor-link.js';
 import './scss/index.scss';
-import './js/script.js';

@@ -5,8 +5,6 @@
             top: 50px;
             bottom: 50px;
         }
-    }
-    &__content{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -22,6 +20,11 @@
             &-text{
                 margin-bottom: 10px;
                 color: var(--white);
+                transition: .3s;
+                &:hover{
+                    transition: .3s;
+                    color: rgb(149, 145, 145);
+                }
                 &:active{
                     color: var(--gray);
                     transition: .1s;

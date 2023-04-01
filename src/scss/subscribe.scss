@@ -74,9 +74,10 @@
                 right: 23px;
             }
             background-color: var(--buttonColor);
+            transition: .3s;
             &:hover{
                 background-color: var(--orangeHoverColor);
-                transition: .5s;
+                transition: .3s;
             }
             &:active{
                 color: var(--gray);
